@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="myImage" onclick="changeImage()" src="DP1.jpg" width="250" height="300">
+
+<p>Before CSS vs After CSS & JS</p>
+
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "DP1.jpg";
+  } else {
+    image.src = "DP2.jpg";
+  }
+}
+</script>
+
+</body>
+</html>
